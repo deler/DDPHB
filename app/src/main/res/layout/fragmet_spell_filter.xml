@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/layoutRoot"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:animateLayoutChanges="true">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/textTitle"
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginEnd="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:gravity="center_vertical"
+        android:text="@string/spell_filter_label_title"/>
+
+    <View
+        android:layout_below="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/separator_chapters"/>
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/textTitle"
+        android:layout_above="@+id/buttonsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textLabelClasses"
+                style="@style/TextTitleSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:gravity="center_vertical"
+                android:text="@string/spell_filter_label_classes"/>
+
+            <my.ddx.ddphb.ui.widgets.TagSelectorView
+                android:id="@+id/layoutClasses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:animateLayoutChanges="true"/>
+
+            <TextView
+                android:id="@+id/textLabelSchools"
+                style="@style/TextTitleSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="@string/spell_filter_label_schools"/>
+
+            <my.ddx.ddphb.ui.widgets.TagSelectorView
+                android:id="@+id/layoutSchools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:layout_marginStart="@dimen/spacing_large"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textLabelLevels"
+                    style="@style/TextTitleSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/rangeLevel"
+                    android:layout_marginEnd="@dimen/spacing_large"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:text="@string/spell_filter_label_levels"/>
+
+                <com.appyvet.rangebar.RangeBar
+                    android:id="@+id/rangeLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginEnd="@dimen/spacing_large"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    app:barWeight="4dp"
+                    app:connectingLineColor="@color/orange"
+                    app:pinColor="@color/orange"
+                    app:pinMaxFont="15sp"
+                    app:pinMinFont="12sp"
+                    app:rangeBarColor="@color/green_light"
+                    app:selectorColor="@color/orange"
+                    app:selectorSize="8dp"
+                    app:tickColor="@color/orange"
+                    app:tickEnd="9"
+                    app:tickHeight="1.5dp"
+                    app:tickInterval="1"
+                    app:tickStart="0"/>
+
+                <TextView
+                    style="@style/TextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/rangeLevel"
+                    android:layout_marginEnd="@dimen/spacing_large"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:text="@string/spell_filter_label_min"/>
+
+                <TextView
+                    style="@style/TextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/rangeLevel"
+                    android:layout_marginEnd="@dimen/spacing_large"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large"
+                    android:gravity="end"
+                    android:text="@string/spell_filter_label_max"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:id="@+id/buttonsPanel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/green_dark"/>
+
+        <Button
+            android:id="@+id/buttonOk"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="@color/green_dark"/>
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+</RelativeLayout>

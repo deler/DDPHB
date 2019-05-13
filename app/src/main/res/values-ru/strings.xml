@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DDPHB</string>
+    <string name="main_drawer_close">Закрыть</string>
+    <string name="main_drawer_open">Открыть</string>
+    <string name="main_menu_characters">Персонажи</string>
+    <string name="main_menu_items">Предметы</string>
+    <string name="main_menu_monsters">Бестиарий</string>
+    <string name="main_menu_skills">Умения</string>
+    <string name="main_menu_spells">Заклинания</string>
+    <string name="main_spells_menu_filter">Фильтер</string>
+    <string name="main_title_characters">Персонажи</string>
+    <string name="main_title_items">Предметы</string>
+    <string name="main_title_monsters">Бестиарий</string>
+    <string name="main_title_skills">Умения</string>
+    <string name="main_title_spells">Заклинания</string>
+    <string name="spells_text_level_and_school">%1$d уровень, %2$s</string>
+    <string name="spells_text_cantrips_and_school">Заговор, %1$s</string>
+    <string name="spell_details_text_level_and_school">%1$d уровень, %2$s</string>
+    <string name="spell_details_text_cantrips_and_school">Заговор, %1$s</string>
+    <string name="spell_details_label_casting_time">Время накладывания:</string>
+    <string name="spell_details_label_components">Компоненты:</string>
+    <string name="spell_details_label_concentration">Концентрация,</string>
+    <string name="spell_details_label_description">Описание:</string>
+    <string name="spell_details_label_duration">Длительность:</string>
+    <string name="spell_details_label_range">Дистанция:</string>
+    <string name="spell_details_label_ritual">Ритуал,</string>
+    <string name="spell_details_label_up_level">Повышение уровня:</string>
+    <string name="toolbar_search_view_hint">Поиск</string>
+    <string name="main_title_spell_filter">Фильтр Заклинаний</string>
+    <string name="spell_filter_label_levels">Уровень:</string>
+    <string name="spell_filter_label_max">9 Уровень</string>
+    <string name="spell_filter_label_min">Заговор</string>
+    <string name="spell_filter_label_title">Фильтр заклинаний</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Ок</string>
+    <string name="spell_filter_label_classes">Классы:</string>
+    <string name="spell_filter_label_schools">Школы:</string>
+    <string name="spell_filter_label_all">Все</string>
+</resources>

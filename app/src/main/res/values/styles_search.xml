@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textCursorDrawable">@drawable/cursor_black</item>
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="searchIcon">@drawable/ic_search_black_24dp</item>
+        <item name="closeIcon">@drawable/ic_clear_black_24dp</item>
+        <item name="queryHint">@string/toolbar_search_view_hint</item>
+        <item name="android:imeActionId">6</item>
+    </style>
+
+    <string name="toolbar_search_view_hint">Search</string>
+</resources>

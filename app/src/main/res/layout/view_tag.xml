@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_group_black_24dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:padding="@dimen/spacing_small"
+        android:gravity="center"
+        android:text="tag1"
+        android:textAllCaps="true"
+        android:textColor="@color/selector_color_tag_default"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/imageRemove"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_clear_black_24dp"
+        android:visibility="gone"/>
+</merge>

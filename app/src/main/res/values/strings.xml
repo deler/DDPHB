@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">DDPHB</string>
+
+    <string name="main_drawer_open">Open</string>
+    <string name="main_drawer_close">Close</string>
+
+    <string name="main_menu_characters">Characters</string>
+    <string name="main_menu_monsters">Monsters</string>
+    <string name="main_menu_items">Items</string>
+    <string name="main_menu_skills">Skills</string>
+    <string name="main_menu_spells">Spells</string>
+
+    <string name="main_title_characters">Characters</string>
+    <string name="main_title_monsters">Monsters</string>
+    <string name="main_title_items">Items</string>
+    <string name="main_title_skills">Skills</string>
+    <string name="main_title_spells">Spells</string>
+    <string name="main_spells_menu_filter">Filter</string>
+    <string name="spells_text_level_and_school">Level %1$d, %2$s</string>
+    <string name="spells_text_cantrips_and_school">Cantrips, %1$s</string>
+    <string name="spell_details_text_level_and_school">Level %1$d, %2$s</string>
+    <string name="spell_details_text_cantrips_and_school">Cantrips, %1$s</string>
+    <string name="spell_details_label_casting_time">Casting time:</string>
+    <string name="spell_details_label_range">Range:</string>
+    <string name="spell_details_label_duration">Duration:</string>
+    <string name="spell_details_label_components">Components:</string>
+    <string name="spell_details_label_description">Description:</string>
+    <string name="spell_details_label_up_level">Up levels:</string>
+    <string name="spell_details_label_concentration">Concentration,</string>
+    <string name="spell_details_label_ritual">Ritual,</string>
+    <string name="main_title_spell_filter">Spell Filter</string>
+    <string name="spell_filter_label_levels">Levels:</string>
+    <string name="spell_filter_label_min">Cantrips</string>
+    <string name="spell_filter_label_max">Level 9</string>
+    <string name="spell_filter_label_title">Spell Filter</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="spell_filter_label_classes">Classes:</string>
+    <string name="spell_filter_label_schools">Schools:</string>
+    <string name="spell_filter_label_all">All</string>
+
+</resources>
